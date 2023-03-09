@@ -1,6 +1,6 @@
 header
     .menu
-        height: 70px
+        padding: 24px 0
         position: fixed
         right: 0
         left: 0
@@ -18,9 +18,9 @@ header
             display: none
             border: 1px solid #606060a6
             opacity: 0.6
+            font-weight: 700
             h2
                 cursor: pointer
-                font-weight: 700
             .icon
                 margin-left: 8px
                 cursor: pointer
@@ -28,7 +28,20 @@ header
             margin-right: 90px
             a
                 font-size: 19px
-                margin: 0 20px
+                margin-right: 35px
                 &:hover
                     color: #f3c41a
                     cursor: pointer
+
+    @media screen and ( max-width: 992px )
+        .menu
+            nav
+                display: none
+            .btn
+                display: flex
+                margin-right: 40px
+
+    @media screen and ( max-width: 576px )
+        .menu
+            .imgbox
+                margin-left: 20px

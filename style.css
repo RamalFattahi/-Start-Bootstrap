@@ -15,7 +15,7 @@ section {
 }
 
 header .menu {
-  height: 70px;
+  padding: 24px 0;
   position: fixed;
   right: 0;
   left: 0;
@@ -36,10 +36,10 @@ header .menu .btn {
   display: none;
   border: 1px solid rgba(96, 96, 96, 0.6509803922);
   opacity: 0.6;
+  font-weight: 700;
 }
 header .menu .btn h2 {
   cursor: pointer;
-  font-weight: 700;
 }
 header .menu .btn .icon {
   margin-left: 8px;
@@ -50,15 +50,29 @@ header .menu nav {
 }
 header .menu nav a {
   font-size: 19px;
-  margin: 0 20px;
+  margin-right: 35px;
 }
 header .menu nav a:hover {
   color: #f3c41a;
   cursor: pointer;
 }
+@media screen and (max-width: 992px) {
+  header .menu nav {
+    display: none;
+  }
+  header .menu .btn {
+    display: flex;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .menu .imgbox {
+    margin-left: 20px;
+  }
+}
 
 #welcome {
-  background-image: url("Assets/1.jpg");
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -89,6 +103,14 @@ header .menu nav a:hover {
 }
 #welcome .box .textbox .btn:hover {
   background-color: #d9ac08;
+}
+@media screen and (max-width: 768px) {
+  #welcome .box .textbox h1 {
+    font-size: 35px;
+  }
+  #welcome .box .textbox h3 {
+    font-size: 62px;
+  }
 }
 
 #services .textbox h1 {
@@ -320,8 +342,8 @@ header .menu nav a:hover {
 }
 
 #contact {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
   background-color: #212529;
-  background-image: url("Assets/2.png");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -336,15 +358,15 @@ header .menu nav a:hover {
   font-size: 20px;
 }
 #contact .add {
-  margin-top: 50px;
+  margin-top: 52px;
   display: flex;
   flex-direction: column;
 }
 #contact .add input {
   font-weight: 700;
   border: 1px solid #ced4da;
-  font-size: 20px;
-  margin: 13px 0;
+  font-size: 19px;
+  margin: 12px 0;
   padding: 20px;
 }
 #contact .box {
@@ -353,9 +375,9 @@ header .menu nav a:hover {
 }
 #contact .box textarea {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
   border: 1px solid #ced4da;
-  padding: 18px;
+  padding: 20px;
   border-radius: 5px;
 }
 #contact .btn {
@@ -365,7 +387,7 @@ header .menu nav a:hover {
   font-weight: 700;
   font-size: 20px;
   opacity: 0.7;
-  margin-top: 34px;
+  margin-top: 35px;
 }
 
 footer {
