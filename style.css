@@ -11,11 +11,11 @@ body {
 }
 
 section {
-  padding: 100px;
+  padding: 100px 0;
 }
 
 header .menu {
-  padding: 24px 0;
+  height: 70px;
   position: fixed;
   right: 0;
   left: 0;
@@ -125,13 +125,12 @@ header .menu nav a:hover {
 #services .textbox h2 {
   font-size: 30px;
   font-weight: 700;
-  margin-top: 15px;
+  margin: 15px 0 20px;
 }
 #services .textbox p {
-  font-size: 19px;
+  font-size: 20px;
   color: #6c757d;
   line-height: 1.5;
-  margin: 20px;
 }
 #services .box {
   display: flex;
@@ -148,7 +147,6 @@ header .menu nav a:hover {
   align-items: center;
   border-radius: 70px;
 }
-
 #portfolio {
   background-color: #f9f9fa;
 }
@@ -391,7 +389,7 @@ header .menu nav a:hover {
 }
 
 footer {
-  padding: 14px;
+  padding: 14px 0;
 }
 footer .textbox h1 {
   color: #5d6566;
