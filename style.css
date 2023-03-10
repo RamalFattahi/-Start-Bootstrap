@@ -190,11 +190,12 @@ header .menu nav a:hover {
 }
 #portfolio .box .imgbox li .icon i {
   font-size: 60px;
+  cursor: pointer;
 }
 #portfolio .box .imgbox li:hover {
   opacity: 1;
-  cursor: pointer;
   transition: 0.5s;
+  cursor: pointer;
 }
 #portfolio .box .textbox {
   text-align: center;
