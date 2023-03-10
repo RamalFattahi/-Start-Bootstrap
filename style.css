@@ -15,7 +15,7 @@ section {
 }
 
 header .menu {
-  height: 70px;
+  height: 72px;
   position: fixed;
   right: 0;
   left: 0;
@@ -125,7 +125,7 @@ header .menu nav a:hover {
 #services .textbox h2 {
   font-size: 30px;
   font-weight: 700;
-  margin: 15px 0 20px;
+  margin: 18px;
 }
 #services .textbox p {
   font-size: 20px;
@@ -147,6 +147,12 @@ header .menu nav a:hover {
   align-items: center;
   border-radius: 70px;
 }
+@media screen and (max-width: 768px) {
+  #services .textbox p {
+    margin-bottom: 20px;
+  }
+}
+
 #portfolio {
   background-color: #f9f9fa;
 }
@@ -201,6 +207,26 @@ header .menu nav a:hover {
 #portfolio .box .textbox h4 {
   font-size: 18px;
   color: #6a7279;
+}
+@media screen and (max-width: 1200px) {
+  #portfolio .box {
+    height: 330px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #portfolio .box {
+    height: 360px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #portfolio .box {
+    height: 290px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #portfolio .box {
+    height: 360px;
+  }
 }
 
 #about h1 {
