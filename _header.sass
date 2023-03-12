@@ -1,46 +1,38 @@
 header
-    .menu
-        height: 72px
-        position: fixed
-        right: 0
-        left: 0
-        top: 0
-        z-index: 1
-        background-color: #212529
-        .imgbox
-            width: 140px
-            margin-left: 120px
-            img
+    padding: 24px
+    position: fixed
+    right: 0
+    left: 0
+    top: 0
+    z-index: 1
+    background-color: #212529
+    .imgbox
+        width: 140px
+        img
+            cursor: pointer
+    .btn
+        color: #ffff
+        display: flex
+        display: none
+        border: 1px solid #606060a6
+        opacity: 0.6
+        font-weight: 700
+        h2
+            cursor: pointer
+        .icon
+            margin-left: 10px
+            cursor: pointer
+    nav
+        a
+            font-size: 19px
+            margin-right: 35px
+            &:hover
+                color: #f3c41a
                 cursor: pointer
-        .btn
-            color: #ffff
-            display: flex
-            display: none
-            border: 1px solid #606060a6
-            opacity: 0.6
-            font-weight: 700
-            h2
-                cursor: pointer
-            .icon
-                margin-left: 10px
-                cursor: pointer
-        nav
-            a
-                font-size: 19px
-                margin-right: 35px
-                &:hover
-                    color: #f3c41a
-                    cursor: pointer
 
     @media screen and ( max-width: 992px )
         .menu
-            display: flex
             nav
                 display: none
             .btn
                 display: flex
-
-    @media screen and ( max-width: 576px )
-        .menu
-            .imgbox
-                margin-left: 20px

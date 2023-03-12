@@ -14,8 +14,8 @@ section {
   padding: 100px 0;
 }
 
-header .menu {
-  height: 72px;
+header {
+  padding: 24px;
   position: fixed;
   right: 0;
   left: 0;
@@ -23,14 +23,13 @@ header .menu {
   z-index: 1;
   background-color: #212529;
 }
-header .menu .imgbox {
+header .imgbox {
   width: 140px;
-  margin-left: 120px;
 }
-header .menu .imgbox img {
+header .imgbox img {
   cursor: pointer;
 }
-header .menu .btn {
+header .btn {
   color: white;
   display: flex;
   display: none;
@@ -38,35 +37,27 @@ header .menu .btn {
   opacity: 0.6;
   font-weight: 700;
 }
-header .menu .btn h2 {
+header .btn h2 {
   cursor: pointer;
 }
-header .menu .btn .icon {
+header .btn .icon {
   margin-left: 10px;
   cursor: pointer;
 }
-header .menu nav a {
+header nav a {
   font-size: 19px;
   margin-right: 35px;
 }
-header .menu nav a:hover {
+header nav a:hover {
   color: #f3c41a;
   cursor: pointer;
 }
 @media screen and (max-width: 992px) {
-  header .menu {
-    display: flex;
-  }
   header .menu nav {
     display: none;
   }
   header .menu .btn {
     display: flex;
-  }
-}
-@media screen and (max-width: 576px) {
-  header .menu .imgbox {
-    margin-left: 20px;
   }
 }
 
@@ -162,12 +153,12 @@ header .menu nav a:hover {
 #portfolio h3 {
   font-size: 20px;
   color: #6c757d;
-  margin: 20px 0 40px;
+  margin: 20px 0 65px;
 }
 #portfolio .box {
   background-color: white;
   height: 380px;
-  margin-top: 25px;
+  margin-bottom: 24px;
 }
 #portfolio .box .imgbox {
   position: relative;
@@ -222,13 +213,12 @@ header .menu nav a:hover {
   #portfolio .box {
     height: 290px;
   }
-  #portfolio .box .imgbox {
-    width: 200px;
-  }
 }
 @media screen and (max-width: 576px) {
   #portfolio .box {
-    height: 360px;
+    height: 420px;
+    width: 415px;
+    margin-left: 70px;
   }
 }
 
