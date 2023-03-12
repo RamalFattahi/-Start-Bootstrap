@@ -42,11 +42,8 @@ header .menu .btn h2 {
   cursor: pointer;
 }
 header .menu .btn .icon {
-  margin-left: 8px;
+  margin-left: 10px;
   cursor: pointer;
-}
-header .menu nav {
-  margin-right: 90px;
 }
 header .menu nav a {
   font-size: 19px;
@@ -57,12 +54,14 @@ header .menu nav a:hover {
   cursor: pointer;
 }
 @media screen and (max-width: 992px) {
+  header .menu {
+    display: flex;
+  }
   header .menu nav {
     display: none;
   }
   header .menu .btn {
     display: flex;
-    margin-right: 40px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -222,6 +221,9 @@ header .menu nav a:hover {
 @media screen and (max-width: 768px) {
   #portfolio .box {
     height: 290px;
+  }
+  #portfolio .box .imgbox {
+    width: 200px;
   }
 }
 @media screen and (max-width: 576px) {
